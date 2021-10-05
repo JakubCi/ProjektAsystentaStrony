@@ -1,0 +1,68 @@
+body{
+    background: cadetblue;
+
+}
+/*Tutaj znajduje się kontener główny zawierający Wszystkie Elementy składające się na asystenta*/
+.mainKontener {
+    background: #ffff;
+    bottom:0;
+    right:0;
+    position: fixed;
+    width: 227px;
+    height: 38px;
+    visibility: visible;
+ 
+}
+/*Tutaj znajduje się kontener główny zawierający Wszystkie Elementy składające się na asystenta*/
+
+/*Tutaj znajduje się kontener Zawierający Przyciski: rozwiń , Zdjęcie Asystenta i przycisk Rozmowy*/
+.kontener{
+    display: flex;
+}
+
+.kontener button{
+    flex: 1 1 0;
+    height: 38px;
+    background:lightblue;
+    color: white;
+
+}
+/*Tutaj znajduje się kontener Zawierający Przyciski: rozwiń , Zdjęcie Asystenta i przycisk Rozmowy*/
+
+.KontenerNaTekst{
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 88.5%;
+}
+
+#TekstWypsywany{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+@keyframes animacja {
+    from{
+
+        height: 38px;
+    }
+    to{
+        height: 327px;
+    }
+}
+@keyframes animacja2 {
+    
+    from{
+
+        height: 327px;
+    }
+    to{
+        height: 38px;
+        
+    }
+}
+
