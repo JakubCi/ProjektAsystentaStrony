@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="asystentstrony.css">
+    </head>
+    <body>
+        <!--Głowny kontener-->
+        <div class="mainKontener" name="nameKontener"id='IdKontener'>
+            
+            <div class="kontener" >
+                <button id="WidokAsystenta" > Tu będzie Asystent</button>
+                <button name="przyciskRozwijania1"id="przyciskRozwijania">Rozwin</button>
+                <button name="przyciskRozmowy1"id="PrzyciskRozmowy" > Tu będzie rozmowy</button>
+            </div>
+
+            
+            <div class="KontenerNaWiadomosci" name="KontenerNaWiadomosci1">
+                <div class="OdpowiedzBota" name="OdpowiedzBota1">
+                    <h5 id="h5h"></h5>
+                            <p id="WiadomosciBota" class="WiadomoscBota1"><span>Ładowanie</span></p>
+                </div>
+                <div class="OdpowiedzUz" name="OdpowiedzUz1">
+                    <h5 id="h5h"></h5>
+                    <p  class="WiadomoscUz1"><span name="XD"></span></p>
+                </div>
+
+                
+            </div>
+            <div class="KontenerNaTekst">
+                <input type="button" class="PrzyciskWyslij"name="wyslij">
+                <input type="text" name="TekstWpisywany1" id="TekstWpisywany">
+            </div>
+        </div>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="menurozwijane.js"></script>
+        <script src="wysylanieWiadomosci.js"></script>
+
+    </body>
+</html>
