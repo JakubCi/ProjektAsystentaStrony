@@ -71,6 +71,8 @@ function WiadomosciBota(tekst) {
     else if(tekst.includes(SzukanieKeyWord2(Gdzie)) == true){
         Gdz = true
         return PrzeszukiwaniePlikuWWTablice();
+    }else{
+      return "Za mało mnie nauczyli dranie jedni :C"
     }
    
 
