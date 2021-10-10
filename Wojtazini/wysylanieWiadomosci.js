@@ -25,6 +25,7 @@ function UstawianiePrzycisku(){
 
     const przycisk1=document.querySelector("input[name='wyslij']")
     przycisk1.addEventListener('click',Odpowiedz)
+    przycisk1.addEventListener('click',Usuwanie)
 }
 
 function Odpowiedz1(tekstwpisywany) {
