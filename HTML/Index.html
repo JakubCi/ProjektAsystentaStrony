@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Asysten Strony</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/asystentstrony.css">
+    </head>
+    <body>
+
+        <div class="otoczkaStrony">
+            <div class="otoczkaPrzyciski">
+                <input type="button"  name="StronaGl"id="PrzyciskOt" value="Strona Główna">
+                <input onClick="window.location.href='O-Nas.html'" type="button" name="InfoAut"id="PrzyciskOt" value="Informacje-Autorzy">
+                <input onClick="window.location.href='O-Asystencie.html'"type="button" name="InfoStr"id="PrzyciskOt" value="Informacje-Strona">
+            </div>
+            <div clasc="Pomoc">
+                <img src="Zdjecia/Wysyłanie.png" id="PierwszaStrzalka" name="StrzalMenu">
+                <img src="Zdjecia/Wysyłanie.png" id="PierwszaStrzalka2" name="StrzalAuto">
+                <img src="Zdjecia/Wysyłanie.png" id="PierwszaStrzalka3" name="StrzalStro">
+            </div>
+
+
+        </div>
+
+        <!--Głowny kontener-->
+        <div class="mainKontener" name="nameKontener"id='IdKontener'>
+            
+
+
+
+            <div class="kontener" >
+                <button id="przyciskikona"><img src="Zdjecia/zdjecie.jpg" style="width:30px;"></button>
+                <input type="image" src="Zdjecia/Rozwin.jpg"  name="przyciskRozwijania1"id="przyciskRozwijania" value="Rozwin">
+                
+                
+            </div>
+
+            
+            <div class="KontenerNaWiadomosci" name="KontenerNaWiadomosci1"id="KontenerNaWiadomosci2">
+                <div class="PierwszaWiad">
+                    <p><span style="color:'#083D77'">Witamy w asystencie Strony! Proszę napisz "Kobieta" jeżeli chcesz rozmawiać z kobietą, lub "Mężczyzna" by rozmawiać z mężczyzną</span></p>
+                </div>
+                <div class="OdpowiedzBota" name="OdpowiedzBota1"id="OdpowiedzBota2">
+                    <h5 id="h5h"></h5>
+                    <p id="WiadomosciBota" class="WiadomoscBota1"></p>
+                </div>
+                <div class="OdpowiedzUz" name="OdpowiedzUz1"id="OdpowiedzUz2">
+                    <p></p>
+                </div>
+
+            </div>
+            <div class="KontenerNaTekst"id="KontenerNaTekst1">
+                
+                <input type="text" name="TekstWpisywany1" id="TekstWpisywany"placeholder="Wcisnij 'ENTER' by wyslac"oninput="guzik()">
+            </div>
+        </div>   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/menurozwijane.js"></script>
+        <script src="JS/wysylanieWiadomosci.js"></script>
+        <script src="JS/AnimacjeStrzalek.js"></script>
+    </body>
+</html>
