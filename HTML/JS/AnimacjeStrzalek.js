@@ -9,10 +9,9 @@ function AnimationControllerMenu(){
    
 
         
-            Opened = true;
-            AnimacjaStrzalkiMenu.style.animation='animacjaPojawiania 1s linear';
+            AnimacjaStrzalkiMenu.style.animation='animacjaPojawiania 1.5s linear';
             AnimacjaStrzalkiMenu.style.animationFillMode = "forwards";
-            AnimacjaStrzalkiMenu.style.animation='animacjaZnikania 1s linear';
+            AnimacjaStrzalkiMenu.style.animation='animacjaZnikania 1.5s linear';
             AnimacjaStrzalkiMenu.style.animationFillMode = "forwards";
             
         

@@ -112,7 +112,7 @@ const Gdzie = [
 
 ];
 
-const Plcie = ["mężczyzna","kobieta","niezidentyfikowane"];
+const Plcie = ["mężczyzna","mezczyzna","kobieta","niezidentyfikowane"];
 
 
 function SzukanieKeyWord(TablicaZmiennych = []){
@@ -162,13 +162,13 @@ function PrzeszukiwaniePlikuTablica(pattern){
                     if(tekstwpisywany.includes(pattern[0])){
                         IndexCon = contains.indexOf("Powitania");
                         contains = contains[IndexCon+1];
-                    }else if(tekstwpisywany.includes(pattern[1])){
+                    }else if(tekstwpisywany.includes(pattern[2])){
                         IndexCon = contains.indexOf("Powitania");
                         contains = contains[IndexCon+2];
                     }
-                    else if(tekstwpisywany.includes(pattern[2])){
+                    else if(tekstwpisywany.includes(pattern[1])){
                         IndexCon = contains.indexOf("Powitania");
-                        contains = contains[IndexCon+2];
+                        contains = contains[IndexCon+1];
                     }
                 } 
             });

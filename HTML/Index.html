@@ -7,6 +7,8 @@
     </head>
     <body>
 
+
+
         <div class="otoczkaStrony">
             <div class="otoczkaPrzyciski">
                 <input type="button"  name="StronaGl"id="PrzyciskOt" value="Strona Główna">
@@ -18,27 +20,48 @@
                 <img src="Zdjecia/Wysyłanie.png" id="PierwszaStrzalka2" name="StrzalAuto">
                 <img src="Zdjecia/Wysyłanie.png" id="PierwszaStrzalka3" name="StrzalStro">
             </div>
+            <div class="blad">
+                <div class="MenuZglosBlad">
+                    <form 
 
+                    method=”POST”
+                    
+                    enctype=”multipart/form-data”
+
+                    name=”EmailForm”>
+                                     
+                    <input type="text" id="Problem" placeholder="Napisz jaki problem Spotkałeś"><br><br>
+
+                    <textarea id="Opis" placeholder="Opisz swój problem" rows="50" cols="60"></textarea>
+                    <input type="submit" id="XD">
+                    </form>
+
+                    
+                </div>
+
+
+
+            </div>
 
         </div>
 
         <!--Głowny kontener-->
         <div class="mainKontener" name="nameKontener"id='IdKontener'>
-            
+
 
 
 
             <div class="kontener" >
                 <button id="przyciskikona"><img src="Zdjecia/zdjecie.jpg" style="width:30px;"></button>
                 <input type="image" src="Zdjecia/Rozwin.jpg"  name="przyciskRozwijania1"id="przyciskRozwijania" value="Rozwin">
-                
+                <button id="przyciskBlad"><img src="Zdjecia/robak.png" style="width:30px;" ></button>
                 
             </div>
 
             
             <div class="KontenerNaWiadomosci" name="KontenerNaWiadomosci1"id="KontenerNaWiadomosci2">
                 <div class="PierwszaWiad">
-                    <p><span style="color:'#083D77'">Witamy w asystencie Strony! Proszę napisz "Kobieta" jeżeli chcesz rozmawiać z kobietą, lub "Mężczyzna" by rozmawiać z mężczyzną</span></p>
+                    <p><span style="color:'#083D77'">Witamy w asystencie Strony! Proszę napisz "Kobieta" jeżeli chcesz rozmawiać z kobietą, lub "Mężczyzna" by rozmawiać z mężczyzną. Jeżeli będziesz miał pytanie zadaj je a ja z pewnością ci na nie odpowiem!</span></p>
                 </div>
                 <div class="OdpowiedzBota" name="OdpowiedzBota1"id="OdpowiedzBota2">
                     <h5 id="h5h"></h5>
@@ -53,10 +76,13 @@
                 
                 <input type="text" name="TekstWpisywany1" id="TekstWpisywany"placeholder="Wcisnij 'ENTER' by wyslac"oninput="guzik()">
             </div>
-        </div>   
+        </div>  
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="JS/menurozwijane.js"></script>
         <script src="JS/wysylanieWiadomosci.js"></script>
         <script src="JS/AnimacjeStrzalek.js"></script>
+        <script src="JS/ZglosBlad.js"></script> 
+        
     </body>
 </html>
