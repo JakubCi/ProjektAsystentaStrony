@@ -1,0 +1,469 @@
+body{
+    background: #083D77;
+
+}
+/*OTOCZKA STRONY    */
+.otoczkaStrony{
+
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5%;
+    
+}
+.Pomoc{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#PierwszaStrzalka{
+    position: relative;
+    padding-left: 15%;
+    width: 2%;
+    height: 2%;
+    opacity: 0;
+}
+#PierwszaStrzalka2{
+    position: relative;
+    padding-left: 30%;
+    width: 2%;
+    height: 2%;
+    opacity: 0;
+}
+#PierwszaStrzalka3{
+    position: relative;
+    padding-left: 33%;
+    width: 2%;
+    height: 2%;
+    opacity: 0;
+}
+
+
+.otoczkaPrzyciski{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+#PrzyciskOt{
+
+    background: #2E4057;
+    color: #F6D8AE;
+    height: 100%;
+    font-size:medium;
+    text-align: left;
+    width: 100%;
+    cursor:pointer;
+    border-style:solid;
+}
+
+
+
+
+
+/*OTOCZKA STRONY    */
+
+
+/*Zglos Błąd  */
+
+.blad{
+
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:99;
+    display: none;
+    opacity: 0;
+
+
+}
+#listy{
+    top:10%;
+    width:50%;
+    height: 30%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 2%;
+    color: black;
+    cursor: pointer;
+}
+
+#listy:hover{
+    background-color:lightgrey;
+}
+.pomocstrony{
+    width:60%;
+    margin-left: 20%;
+    top:3%;
+    height:30%;
+    padding: 3px;
+
+    border-radius: 4px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    
+}
+.tekst{
+    width:100%;
+    text-align: center;
+    
+}
+.tekst2{
+    margin-left: 11%;
+}
+#problem{
+    width:100%;
+}
+.MenuZglosBlad{
+    background-color: rgba(196, 199, 212, 1);
+    background-image: "./Zdjecia/robak.png";
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    z-index:99;
+    display: block;
+    opacity: 1;
+    border-radius: 6px;
+
+
+}
+#Opis{
+    background-color: white;
+    position: absolute;
+    margin-left: 2%;
+    margin-right:2%;
+    bottom:17%;
+    width: 96%;
+    height: 34%;
+    display: block;
+    line-height:40px;
+    cursor: text;
+    border-radius:6px;
+    border:none;
+
+}
+
+#Opis:hover{
+    background-color:lightgrey;
+}
+#XD{
+    display:block;
+    position: absolute;
+    bottom:5%;
+    margin-left: 2%;
+    width:10%;
+    height:7%;
+    background-color: white;
+    border:none;
+    cursor: pointer;
+}
+#XD:hover{
+    background-color:lightgrey;
+}
+#XD:active{
+    background-color:darkgrey
+}
+textarea{
+    resize: none;
+}
+#przyciskBlad{
+    cursor: pointer;
+}
+#przyciskikona{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*Zglos Błąd  */
+
+
+
+
+/*Tutaj znajduje się kontener główny zawierający Wszystkie Elementy składające się na asystenta*/
+.mainKontener {
+    background: #6071b8;
+    bottom:0;
+    right:0;
+    position: fixed;
+    width: 16%;
+    height: 4%;
+    visibility: visible;
+ 
+}
+
+
+/*Tutaj znajduje się kontener główny zawierający Wszystkie Elementy składające się na asystenta*/
+
+/*Tutaj znajduje się kontener Zawierający Przyciski: rozwiń , Zdjęcie Asystenta i przycisk Rozmowy*/
+.kontener{
+    display: flex;
+}
+
+.kontener input{
+    flex: 1 1 0;
+    height: 38px;
+    color: #6071b8;
+    cursor: pointer;
+
+}
+/*Tutaj znajduje się kontener Zawierający Przyciski: rozwiń , Zdjęcie Asystenta i przycisk Rozmowy*/
+
+.PierwszaWiad{
+    width: 100%;
+    
+    font-family:  sans-serif;
+    font-weight: normal;
+    align-items: center;
+
+
+}
+.PierwszaWiad span{
+
+line-height: 1.5em;
+    display: inline-block;
+    background:#F6D8AE;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin-left: 10px;
+
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+
+
+.KontenerNaWiadomosci{
+    
+    
+    position: relative;
+    width: 100%;
+    align-items: center;
+    height: 80%;
+    overflow: auto;
+    overflow-x: hidden;
+    background: #2E4057;
+    word-wrap: break-word;
+    
+    
+
+    
+}
+
+
+.OdpowiedzUz{
+    color: #083D77;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+
+}
+.OdpowiedzUz span{
+    line-height: 1.5em;
+    display: inline-block;
+    background:#F6D8AE;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: animacjaWiadomosci .5s forwards
+    
+
+}
+.OdpowiedzBota{
+    color: #083D77;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    clear: both;
+    
+
+}
+.OdpowiedzBota span{
+    line-height: 1.5em;
+    display: inline-block;
+    background:#F6D8AE;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: animacjaWiadomosci .5s forwards
+    
+
+}
+
+
+
+
+.PrzyciskWyslij{
+    
+    flex:1;
+    bottom:0;
+    
+}
+#TekstWpisywany{
+
+    flex:6;
+    bottom:0;
+    color: #083D77;
+    background-color:#F6D8AE;
+}
+#TekstWpisywany:focus{
+
+    outline: none;
+}
+
+
+
+.KontenerNaTekst {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    
+
+}
+
+
+
+@keyframes animacjaWiadomosci {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes animacja {
+    from{
+        height: 4%
+        
+    }
+    to{
+        height: 41%;
+    }
+}
+@keyframes animacja2 {
+    
+    from{
+        height: 41%;
+    }
+    to{
+        height: 4%;
+        
+    }
+}
+
+
+/*ANIMACJA PRZYCISUKU ROZWIŃ*/
+@keyframes animacjaRozwijanie1 {
+    from{
+        transform: scaleY(1);
+
+        
+    }
+    to{
+        transform: scaleY(-1);
+
+    }
+}
+@keyframes animacjaRozwijanie2 {
+    
+    from{
+        transform: scaleY(-1);
+
+    }
+    to{
+        transform: scaleY(1);
+
+        
+    }
+}
+
+
+/*ANIMACJA STRZALEK*/
+@keyframes animacjaPojawiania {
+    from{
+        opacity: 0%;
+
+        
+    }
+    to{
+        opacity: 100%;
+
+    }
+}
+@keyframes animacjaZnikania {
+    
+    from{
+        opacity: 100%;
+
+    }
+    to{
+        opacity: 0%;
+        
+    }
+}
+/* ANIMACJIA ZGLOS BLAD*/
+
+
+@keyframes animacjaZGLOS {
+    from{
+        opacity: 0%;
+
+        
+    }
+    to{
+        opacity: 100%;
+
+    }
+}
+@keyframes animacjaZGLOS2 {
+    
+    from{
+        opacity: 100%;
+
+    }
+    to{
+        opacity: 0%;
+        
+    }
+}
+
+
+
+
